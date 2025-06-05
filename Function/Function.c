@@ -30,6 +30,13 @@ uint8_t rx_buffer[RX_BUFFER_SIZE];
 uint16_t rx_index = 0;              
 uint8_t frame_ready = 0;           
 
+/*					adc				*/
+int adc_value;    
+float Vol_Value;
+
+
+
+
 
 
 
@@ -38,7 +45,18 @@ void write_file(void);
 void facard_proc(void);
 
 
-
+void adc_proc(void)
+{
+	adc_flag_clear(ADC0,ADC_FLAG_EOC); 
+	while(SET != adc_flag_get(ADC0,ADC_FLAG_EOC)){}  
+        
+        adc_value = ADC_RDATA(ADC0);    				
+		Vol_Value = adc_value*3.3/4095;  				
+				
+		printf("num=%d	project=%.2f V\r\n",adc_value, Vol_Value);  
+				
+        delay_1ms(1000);  
+}
 
 
 

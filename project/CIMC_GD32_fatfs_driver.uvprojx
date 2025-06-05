@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,GD32F470</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CMSIS;..\Startup;..\Library\GD32F4xx_standard_peripheral\Include;..\User;..\HeaderFiles;..\Function;..\CMSIS\GD\GD32F4xx\Include;..\Fatfs;..\Drivers\LED;..\Drivers\RTC;..\Drivers\SDCARD;..\Drivers\SPI_FLASH;..\Drivers\USART;..\App;..\Interface\OLED</IncludePath>
+              <IncludePath>..\CMSIS;..\Startup;..\Library\GD32F4xx_standard_peripheral\Include;..\User;..\HeaderFiles;..\Function;..\CMSIS\GD\GD32F4xx\Include;..\Fatfs;..\Drivers\LED;..\Drivers\RTC;..\Drivers\SDCARD;..\Drivers\SPI_FLASH;..\Drivers\USART;..\App;..\Interface\OLED;..\Drivers\ADC</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -642,6 +642,11 @@
               <FileName>USART.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\USART\USART.c</FilePath>
+            </File>
+            <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\ADC\adc.c</FilePath>
             </File>
           </Files>
         </Group>

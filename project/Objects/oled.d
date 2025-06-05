@@ -56,4 +56,5 @@
 .\objects\oled.o: ..\Drivers\SDCARD\sdcard.h
 .\objects\oled.o: ..\Interface\OLED\oled.h
 .\objects\oled.o: ..\App\oled_App.h
+.\objects\oled.o: ..\Drivers\ADC\adc.h
 .\objects\oled.o: ..\Interface\OLED\oledfont.h

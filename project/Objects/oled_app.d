@@ -56,4 +56,5 @@
 .\objects\oled_app.o: ..\Drivers\SDCARD\sdcard.h
 .\objects\oled_app.o: ..\Interface\OLED\oled.h
 .\objects\oled_app.o: ..\App\oled_App.h
+.\objects\oled_app.o: ..\Drivers\ADC\adc.h
 .\objects\oled_app.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdarg.h

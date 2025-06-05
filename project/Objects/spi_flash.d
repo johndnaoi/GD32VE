@@ -56,3 +56,4 @@
 .\objects\spi_flash.o: ..\Drivers\SDCARD\sdcard.h
 .\objects\spi_flash.o: ..\Interface\OLED\oled.h
 .\objects\spi_flash.o: ..\App\oled_App.h
+.\objects\spi_flash.o: ..\Drivers\ADC\adc.h

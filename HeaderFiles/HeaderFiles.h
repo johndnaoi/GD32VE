@@ -19,6 +19,7 @@
 #include "sdcard.h"
 #include "oled.h"
 #include "oled_App.h"
+#include "adc.h"
 
 
 

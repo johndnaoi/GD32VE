@@ -10,19 +10,25 @@ int main(void)
 	LED_Init();
 	USART0_Config(); 
 	OLED_Init();
-
+	ADC_port_init();
 	
 	
 //	nvic_config();		
 //	facard_proc();
 	
-	// 先测试基本OLED功能
-	oled_test_basic();
-	delay_1ms(2000);
+
+
+
+
+
+
+	
 
 	while(1)
 	{
-		oled_proc();
+		// 测试printf函数
+		//oled_proc();
+		//adc_proc();
 	}
 	
 }

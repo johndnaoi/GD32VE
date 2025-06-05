@@ -41,6 +41,7 @@
 ".\objects\sdcard.o"
 ".\objects\spi_flash.o"
 ".\objects\usart.o"
+".\objects\adc.o"
 ".\objects\oled.o"
 ".\objects\oled_app.o"
 --library_type=microlib --strict --scatter ".\Objects\CIMC_GD32_fatfs_driver.sct"

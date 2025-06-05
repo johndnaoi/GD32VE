@@ -56,3 +56,4 @@
 .\objects\usart.o: ..\Drivers\SDCARD\sdcard.h
 .\objects\usart.o: ..\Interface\OLED\oled.h
 .\objects\usart.o: ..\App\oled_App.h
+.\objects\usart.o: ..\Drivers\ADC\adc.h
