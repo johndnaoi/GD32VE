@@ -27,21 +27,18 @@ void scheduler_init(void)
 
 void scheduler_run(void)
 {
-
+    uint32_t now_time = get_system_ms();  // 移到循环外获取当前时间
+    
     for (uint8_t i = 0; i < task_num; i++)
-		{
-        uint32_t now_time = get_system_ms();
-
-        if (now_time >= scheduler_task[i].rate_ms + scheduler_task[i].last_run)
+    {
+        // 使用时间差值比较，避免溢出问题
+        if ((int32_t)(now_time - scheduler_task[i].last_run) >= (int32_t)scheduler_task[i].rate_ms)
         {
- 
             scheduler_task[i].last_run = now_time;
-
             scheduler_task[i].task_func();
         }
     }
 }
-
 
 
 
