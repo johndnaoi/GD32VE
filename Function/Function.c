@@ -8,6 +8,11 @@
 #define  FLASH_WRITE_ADDRESS           0x000000
 #define  FLASH_READ_ADDRESS            FLASH_WRITE_ADDRESS
 
+/*					led						*/
+uint8_t ucled[6]={1,0,1,0,1,0};
+
+
+
 /*				 sd				*/
 uint32_t flash_id = 0;
 uint8_t  tx_buffer[TX_BUFFER_SIZE];
@@ -45,6 +50,17 @@ void write_file(void);
 void facard_proc(void);
 
 
+
+/*								led								*/
+void led_proc(void)
+{
+	
+	led_disp(ucled);
+}
+
+
+
+/*								adc								*/
 void adc_proc(void)
 {
 	adc_flag_clear(ADC0,ADC_FLAG_EOC); 
@@ -56,6 +72,17 @@ void adc_proc(void)
 		printf("num=%d	project=%.2f V\r\n",adc_value, Vol_Value);  
 				
         delay_1ms(1000);  
+}
+
+/*								oled							*/
+// ²âÊÔoled_printfº¯Êý
+void oled_proc(void)
+{
+	oled_printf(0, 0, "MCUSTUDIO_GD32");
+  oled_printf(0, 2, "uwTick:%ld", get_system_ms());
+	oled_printf(0, 3, "ADC: %d  ", adc_value);
+  OLED_Refresh();
+//	delay_1ms(2000);
 }
 
 

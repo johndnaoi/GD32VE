@@ -6,8 +6,7 @@
 #include "gd32f4xx.h"
 #include "gd32f4xx_libopt.h"
 #include "systick.h"
-#include <stdio.h>
-#include <stdint.h>
+
 #include "LED.h"
 #include "RTC.h"
 #include "string.h"
@@ -20,8 +19,14 @@
 #include "oled.h"
 #include "oled_App.h"
 #include "adc.h"
+#include "scheduler.h"
 
 
+#include <stdio.h>
+#include <stdint.h>
+#include <stdarg.h>
+
+#include "perf_counter.h"
 
 #endif
 

@@ -1,11 +1,13 @@
 .\objects\gd32f4xx_exmc.o: ..\Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_exmc.c
+.\objects\gd32f4xx_exmc.o: .\RTE\_CIMC_GD32_fatfs_driver\Pre_Include_Global.h
 .\objects\gd32f4xx_exmc.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\gd32f4xx_exmc.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
-.\objects\gd32f4xx_exmc.o: ..\CMSIS\core_cm4.h
+.\objects\gd32f4xx_exmc.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h
 .\objects\gd32f4xx_exmc.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\gd32f4xx_exmc.o: ..\CMSIS\core_cmInstr.h
-.\objects\gd32f4xx_exmc.o: ..\CMSIS\core_cmFunc.h
-.\objects\gd32f4xx_exmc.o: ..\CMSIS\core_cm4_simd.h
+.\objects\gd32f4xx_exmc.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\gd32f4xx_exmc.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\gd32f4xx_exmc.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\gd32f4xx_exmc.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h
 .\objects\gd32f4xx_exmc.o: ..\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h
 .\objects\gd32f4xx_exmc.o: ..\User\gd32f4xx_libopt.h
 .\objects\gd32f4xx_exmc.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h

@@ -1,12 +1,14 @@
 .\objects\usart.o: ..\Drivers\USART\USART.c
+.\objects\usart.o: .\RTE\_CIMC_GD32_fatfs_driver\Pre_Include_Global.h
 .\objects\usart.o: ..\Drivers\USART\USART.h
 .\objects\usart.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\usart.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
-.\objects\usart.o: ..\CMSIS\core_cm4.h
+.\objects\usart.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h
 .\objects\usart.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\usart.o: ..\CMSIS\core_cmInstr.h
-.\objects\usart.o: ..\CMSIS\core_cmFunc.h
-.\objects\usart.o: ..\CMSIS\core_cm4_simd.h
+.\objects\usart.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\usart.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\usart.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\usart.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h
 .\objects\usart.o: ..\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h
 .\objects\usart.o: ..\User\gd32f4xx_libopt.h
 .\objects\usart.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h
@@ -41,7 +43,6 @@
 .\objects\usart.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\usart.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h
 .\objects\usart.o: ..\User\systick.h
-.\objects\usart.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\usart.o: ..\Drivers\LED\LED.h
 .\objects\usart.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\usart.o: ..\Drivers\RTC\RTC.h
@@ -57,3 +58,10 @@
 .\objects\usart.o: ..\Interface\OLED\oled.h
 .\objects\usart.o: ..\App\oled_App.h
 .\objects\usart.o: ..\Drivers\ADC\adc.h
+.\objects\usart.o: ..\App\scheduler.h
+.\objects\usart.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\usart.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\usart.o: D:\programFile\MDK\Pack\GorgonMeducer\perf_counter\2.3.3\perf_counter.h
+.\objects\usart.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\usart.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\usart.o: D:\programFile\MDK\Pack\GorgonMeducer\perf_counter\2.3.3\perfc_port_default.h

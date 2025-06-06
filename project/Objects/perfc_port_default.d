@@ -1,0 +1,10 @@
+.\objects\perfc_port_default.o: D:/programFile/MDK/Pack/GorgonMeducer/perf_counter/2.3.3/perfc_port_default.c
+.\objects\perfc_port_default.o: .\RTE\_CIMC_GD32_fatfs_driver\Pre_Include_Global.h
+.\objects\perfc_port_default.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\perfc_port_default.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\perfc_port_default.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\string.h
+.\objects\perfc_port_default.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\perfc_port_default.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\perfc_port_default.o: D:/programFile/MDK/Pack/GorgonMeducer/perf_counter/2.3.3/perf_counter.h
+.\objects\perfc_port_default.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\perfc_port_default.o: D:/programFile/MDK/Pack/GorgonMeducer/perf_counter/2.3.3/perfc_port_default.h

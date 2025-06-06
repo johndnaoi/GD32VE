@@ -1,11 +1,13 @@
 .\objects\sdcard.o: ..\Drivers\SDCARD\sdcard.c
+.\objects\sdcard.o: .\RTE\_CIMC_GD32_fatfs_driver\Pre_Include_Global.h
 .\objects\sdcard.o: ..\Drivers\SDCARD\sdcard.h
 .\objects\sdcard.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
-.\objects\sdcard.o: ..\CMSIS\core_cm4.h
+.\objects\sdcard.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h
 .\objects\sdcard.o: D:\programFile\MDK\Core\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\sdcard.o: ..\CMSIS\core_cmInstr.h
-.\objects\sdcard.o: ..\CMSIS\core_cmFunc.h
-.\objects\sdcard.o: ..\CMSIS\core_cm4_simd.h
+.\objects\sdcard.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\sdcard.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\sdcard.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\sdcard.o: D:\programFile\MDK\Pack\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h
 .\objects\sdcard.o: ..\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h
 .\objects\sdcard.o: ..\User\gd32f4xx_libopt.h
 .\objects\sdcard.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h

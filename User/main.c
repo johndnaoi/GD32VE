@@ -5,8 +5,13 @@
 
 int main(void)
 {
+   	
+	systick_config();   
+	init_cycle_counter(false);	
+	delay_ms(200);
 	
-	systick_config();    
+	
+	
 	LED_Init();
 	USART0_Config(); 
 	OLED_Init();
@@ -15,17 +20,12 @@ int main(void)
 	
 //	nvic_config();		
 //	facard_proc();
+	scheduler_init();
 	
-
-
-
-
-
-
 	
-
 	while(1)
 	{
+		scheduler_run();
 		// 测试printf函数
 		//oled_proc();
 		//adc_proc();

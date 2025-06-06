@@ -13,6 +13,7 @@ void nvic_config(void);
 void write_file(void);
 void facard_proc(void);
 void adc_proc(void);
+void led_proc(void);
 
 #endif
 

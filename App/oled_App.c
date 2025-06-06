@@ -1,5 +1,5 @@
 #include "oled_App.h"
-#include "stdarg.h"
+
 
 
 
@@ -19,16 +19,6 @@ int oled_printf(uint8_t x, uint8_t y, const char *format, ...)
 }
 
 
-// 测试oled_printf函数
-void oled_proc(void)
-{
-  OLED_Clear();
-	oled_printf(0, 0, "Printf Test");
-	oled_printf(0, 16, "Number: %d", 456);
-
-  OLED_Refresh();
-	delay_1ms(2000);
-}
 
 
 

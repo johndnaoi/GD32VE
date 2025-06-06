@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,GD32F470</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CMSIS;..\Startup;..\Library\GD32F4xx_standard_peripheral\Include;..\User;..\HeaderFiles;..\Function;..\CMSIS\GD\GD32F4xx\Include;..\Fatfs;..\Drivers\LED;..\Drivers\RTC;..\Drivers\SDCARD;..\Drivers\SPI_FLASH;..\Drivers\USART;..\App;..\Interface\OLED;..\Drivers\ADC</IncludePath>
+              <IncludePath>..\Startup;..\Library\GD32F4xx_standard_peripheral\Include;..\User;..\HeaderFiles;..\Function;..\CMSIS\GD\GD32F4xx\Include;..\Fatfs;..\Drivers\LED;..\Drivers\RTC;..\Drivers\SDCARD;..\Drivers\SPI_FLASH;..\Drivers\USART;..\App;..\Interface\OLED;..\Drivers\ADC</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -668,10 +668,18 @@
               <FileType>1</FileType>
               <FilePath>..\App\oled_App.c</FilePath>
             </File>
+            <File>
+              <FileName>scheduler.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\scheduler.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::Utilities</GroupName>
         </Group>
       </Groups>
     </Target>
@@ -680,8 +688,14 @@
   <RTE>
     <apis/>
     <components>
-      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.1.1" condition="ARMv6_7_8-M Device">
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.3.0"/>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.6.0" condition="ARMv6_7_8-M Device">
+        <package name="CMSIS" schemaVersion="1.7.7" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
+        <targetInfos>
+          <targetInfo name="CIMC_GD32_fatfs_driver"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Utilities" Cgroup="perf_counter" Csub="Core" Cvariant="Source" Cvendor="GorgonMeducer" Cversion="2.3.3" condition="CMSIS-CORE">
+        <package name="perf_counter" schemaVersion="1.7.37" url="https://raw.githubusercontent.com/GorgonMeducer/perf_counter/CMSIS-Pack/cmsis-pack/" vendor="GorgonMeducer" version="2.3.3"/>
         <targetInfos>
           <targetInfo name="CIMC_GD32_fatfs_driver"/>
         </targetInfos>
